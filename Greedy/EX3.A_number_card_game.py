@@ -1,3 +1,7 @@
+# 생각
+# 각 행의 최솟값을 구해서 그 중의 최댓값을 구하는 방향으로 생각
+
+# 구현
 n,m = map(int, input().split())
 numList = []
 result = 0
