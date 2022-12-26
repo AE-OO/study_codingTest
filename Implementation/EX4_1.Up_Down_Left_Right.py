@@ -4,20 +4,22 @@
 # 구현
 n = int(input())
 directionList = list(input().split())
-x, y = 1, 1
+x = 1
+y = 1
 
 for i in range(len(directionList)):
-    if x < 1 or y < 1 or x > n or y > n:
-        continue
 
     if directionList[i] == 'L':
-        y -= 1
+        y2 = y - 1
     elif directionList[i] == 'R':
-        y += 1
+        y2 = y + 1
     elif directionList[i] == 'U':
-        x -= 1
+        x2 = x - 1
     elif directionList[i] == 'D':
-        x += 1
-    print(f'({x},{y})')
+        x2 = x + 1
+
+    if 1 <= x2 and x2 <= n and 1 <= y2 and y2 <= n:
+        x = x2
+        y = y2
 
 print(x,y)

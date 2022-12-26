@@ -14,6 +14,6 @@ for case in knightCoordi:
     x2 = x + case[1]
     y2 = y + case[0]
     print(x2, y2)
-    if x2 >= 98 or y2 >= 1 or x2 <= 104 or y2 <= 8:
+    if x2 >= 98 and y2 >= 1 and x2 <= 104 and y2 <= 8:
         count += 1
 print(count)
