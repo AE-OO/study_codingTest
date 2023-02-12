@@ -1,6 +1,4 @@
 # 설탕 배달
-# 입력받은 값이 3과 5의 배수인지 확인 => 아니면 -1 출력
-#
 
 n = int(input())
 
@@ -12,7 +10,7 @@ while n >= 0:
         count += n // 5
         print(count)
         break
-    n -= 3
+    n -= 3    # n이 5의 배수가 될 때까지 3을 뺌
     count += 1
 else:
     print(-1)
