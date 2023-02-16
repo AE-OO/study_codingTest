@@ -12,7 +12,5 @@ while x != 1:
     elif x % 2 == 0:
         x = x // 2
     count = count + 1
-    print(x)
-
 
 print(count)
