@@ -1,5 +1,6 @@
 # 바닥 장식
 # 함수 안에서 함수 호출하는 식으로 구현하면 안될듯
+# 수정
 
 def rowShape(i, j, count):
     for a in range(m):
